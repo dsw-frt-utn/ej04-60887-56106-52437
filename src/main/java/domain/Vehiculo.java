@@ -2,7 +2,7 @@ package domain;
 
 public abstract class Vehiculo {
     protected String patente;
-    protected String marca;
+    protected Marca marca;
     protected String modelo;
     protected int anio;
     protected double capacidadCarga;
@@ -50,6 +50,6 @@ public abstract class Vehiculo {
     }
     @Override
     public String toString() {
-        return patente + " - " + marca + " " + modelo + " - Sucursal: " + sucursal.getCodigo();
+        return patente + " - " + marca.getNombre() + " " + modelo + " - Sucursal: " + sucursal.getCodigo();
     }
 }
