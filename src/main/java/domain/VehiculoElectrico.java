@@ -3,12 +3,11 @@ package domain;
 public class VehiculoElectrico extends Vehiculo {
     private double kwhBase;
 
-    public VehiculoElectrico(String patente, Marca marca, String modelo, int anio, double capacidadCarga,
-                             Sucursal sucursal, double kwhBase) {
-        super(VehiculoTipo.ELECTRICO, patente, marca, modelo, anio, capacidadCarga, sucursal);
+  public VehiculoElectrico(String patente, Marca marca, String modelo, int anio, double capacidadCarga,
+                             Sucursal sucursal, double kwhBase,double kmARecorrer) {
+        super(VehiculoTipo.ELECTRICO, patente, marca, modelo, anio, capacidadCarga, sucursal, kmARecorrer);
         this.kwhBase = kwhBase;
     }
-
     @Override
     public double calcularConsumo(double kilometros) {
         double total = (kilometros/100) * kwhBase;
