@@ -15,6 +15,7 @@ domain\Vehiculo.class
 domain\VehiculoElectrico.class
 views\Controlador.class
 views\IngresoVehiculoView$1.class
+app\Program.class
 views\IngresoVehiculoView$3.class
 views\VehiculoViewModel.class
 views\ListarVehiculosView.class
